@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <video src="./videoplayback.mp4"></video>
+
+    <script>
+        var vid = document.getElementById("video");
+        vid.addEventListener("mouseenter", function(evt){
+            evt.target.play();
+        });
+        vid.addEventListener("mouseout", function(evt){
+            evt.target.pause();
+        })
+    </script>
+</body>
+</html>
